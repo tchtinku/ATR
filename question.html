@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css--> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://kit.fontawesome.com/c7857b5d76.js" crossorigin="anonymous"></script>
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>ATR</title>
+  
+    <style>
+      body {
+background: linear-gradient(135deg, hsl(197, 81%, 21%)0%, #05212b 100%);
+}
+
+.Ques{
+ color: #cb6d14;
+}
+.Quest{
+  color: white;
+}
+.brand-logo{
+  font-size: 2.5rem;  
+}
+.navbar{
+  background:  black;
+  font-family: 'Oswald', sans-serif;}
+  
+.square_btn{
+    display: inline-block;
+    padding: 7px 20px;
+	border-radius: 25px;
+    text-decoration: none;
+    color: #FFF;
+    background-image: -webkit-linear-gradient(45deg, #FFC107 0%, #ff8b5f 100%);
+    background-image: linear-gradient(45deg, #FFC107 0%, #ff8b5f 100%);
+    font-family: 'Oxygen', sans-serif;
+    font-weight: 800;
+    transition: .4s;
+}
+
+.square_btn:hover {
+  background-image: -webkit-linear-gradient(45deg, #FFC107 0%, #f76a35 100%);
+    background-image: linear-gradient(45deg, #FFC107 0%, #f76a35 100%);
+   
+}
+.Ques h2{
+  font-family: 'Oxygen', sans-serif;
+    font-weight: 800;
+}
+.Quest h4{
+  font-family: 'Oxygen', sans-serif;
+    font-weight: 800;
+}
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  font-family: 'Oxygen', sans-serif;
+    font-weight: 800;
+}
+
+.sidenav a{
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  font-family: 'Oxygen', sans-serif;
+    font-weight: 800;
+  transition: 0.3s;
+}
+.sidenav h5{
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  font-family: 'Oxygen', sans-serif;
+    font-weight: 800;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+  </style>
+  </head>
+  <div class="navbar-fixed">
+    <nav class="navbar">
+      <div class="container">
+        <div class="nav-wrapper">
+          <a href="#!" class="brand-logo">ISTE Manipal</a>
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+           <ul class="right hide-on-med-and-down">
+            <li>
+              <a href="#home">Home</a>
+            </li>
+            <li>
+              <a href="#search">Purchase Hints</a>
+            </li>
+            <li>
+              <!-- <a href="#popular">Instructions</a> -->
+              <a class=" modal-trigger" href="#terms">Instructions</a>
+
+              <div id="terms" class="modal">
+                <div class="modal-content">
+                  <h4 class="black-text text-darken-2">INSTRUCTIONS</h4>
+                  <h6 class="black-text text-darken-2">1. Lorem ipsum dolor sit amet, consectetu</h6>
+                  <h6 class="black-text text-darken-2">2. Lorem ipsum dolor sit amet, consectetu</h6>
+                  <h6 class="black-text text-darken-2">3. Lorem ipsum dolor sit amet, consectetu</h6>
+                  <h6 class="black-text text-darken-2">4. Lorem ipsum dolor sit amet, consectetu</h6>
+                </div>
+                
+              </div>
+            </li>
+            <li>
+              <a href="#gallery">Login</a>
+            </li>
+            <li>
+              <a href="#contact">Register</a>
+            </li>
+            <li>
+              <a href="#contactUs">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <ul class="sidenav" id="mobile-demo">
+    <li>
+      <a href="#home">Home</a>
+    </li>
+    <li>
+      <a href="#search">Purchase Hints</a>
+    </li>
+    <li>
+      <a class=" modal-trigger" href="#terms">Instructions</a>
+
+      <div id="terms" class="modal">
+        <div class="modal-content">
+          <h4 class="black-text text-darken-2">INSTRUCTIONS</h4>
+          <h6 class="black-text text-darken-2">1. Lorem ipsum dolor sit amet, consectetu</h6>
+          <h6 class="black-text text-darken-2">2. Lorem ipsum dolor sit amet, consectetu</h6>
+          <h6 class="black-text text-darken-2">3. Lorem ipsum dolor sit amet, consectetu</h6>
+          <h6 class="black-text text-darken-2">4. Lorem ipsum dolor sit amet, consectetu</h6>
+        </div>
+        
+      </div>
+      
+    </li>
+    <li>
+      <a href="#gallery">Login</a>
+    </li>
+    <li>
+      <a href="#contact">Register</a>
+    </li>
+    <li>
+      <a href="#contactUs">Contact Us</a>
+    </li>
+  </ul>
+
+  <div id="main">  
+  <section id="popular" class="section  section-popular scrollspy">
+    <div class="container">
+      <div class="row">
+       
+          <form class="col s12">
+            <div class="row">
+              <div class="row">
+                <form class="col s12">
+                  <div class="row">
+                    <form class="col s12">
+                      <div class="row">
+                       <div class = "Ques">
+                       <h2>Question 1</h2>
+                       </div>
+                       <div class = "Quest">
+                        <h4>What should you wear for your hike?</h4>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="input-field col s12">
+                          <textarea id="textarea2" class="materialize-textarea" data-length="120"></textarea>
+                          <label for="textarea2">Your Answer</label>
+                        </div>
+                      </div>
+                     
+                    </form>
+                    <a href="#" class="square_btn">Submit</a>
+                    <a href="#" class="square_btn">Show</a>
+                    <a href="#" class="square_btn">Hint</a>
+                  </div>
+                  <span style="font-size:80px;cursor:pointer; color: white;" onclick="openNav()">&#9754;</span>
+                </div>
+                 <!-- <a class="waves-effect waves-light btn modal-trigger" href="#sidenav">My Performance</a> -->
+                 <div id="mySidenav" class="sidenav">
+                  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                 <h5>Shubham Pathak</h5>
+                 <h5>Score:</h5>
+                 <h5>Hints:</h5>
+                 <h5>Skips:</h5>
+
+                </div>
+
+                  <!-- Modal Structure -->
+                  <!-- <div id="modal1" class="modal bottom-sheet">
+                    <div class="modal-content">
+                      <h4>Shubham Pathak</h4>
+                      <div class="row">
+                        <form class="col s12">
+                         
+                          <div class="row">
+                            <div class="col s12">
+                              Score:
+                              <div class="input-field inline">
+                                <input id="email_inline" type="email" class="validate">
+                                <label for="email_inline"></label>
+                               
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col s12">
+                              Hints:
+                              <div class="input-field inline">
+                                <input id="email_inline" type="email" class="validate">
+                                <label for="email_inline"></label>
+                               
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col s12">
+                              Skips:
+                              <div class="input-field inline">
+                                <input id="email_inline" type="email" class="validate">
+                                <label for="email_inline"></label>
+                               
+                              </div>
+                            </div>
+                          </div>
+                          <a class="waves-effect waves-light btn">Leaderboard</a>
+                          <a class="waves-effect waves-light btn">Hints</a>
+                        </form>
+                      </div>
+                            
+                    
+                      
+                      
+                    </div>
+                  
+                  </div>
+</form>
+</div>
+            
+          </form>
+        
+     
+    </div> -->
+   
+
+  
+  
+  </section>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+      <!-- <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> -->
+     <script>
+      // Side Menu
+      const sideNav = document.querySelector('.sidenav');
+      M.Sidenav.init(sideNav, {});
+      $(document).ready(function(){
+      $('.modal').modal();
+    });
+
+    // sidenav
+    function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+  document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+  document.body.style.backgroundColor = "white";
+}
+      </script>
+</body>
+  </html>
